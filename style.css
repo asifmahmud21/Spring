@@ -1,0 +1,4107 @@
+/* COLORS */
+
+:root {
+    --primary: #1476BF;
+    --secondary: #1D3566;
+}
+
+body {
+    font-family: 'ds-izmir-normal', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+th {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* HEADER SECTION Start Here*/
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-btn {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 10px 20px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: -1px;
+}
+
+.search-input {
+    background: #afb4b9;
+    color: #666666;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.header-top {
+    padding: 25px 0;
+}
+
+.header-contact p {
+    margin-bottom: 0;
+}
+
+.header-contact i.fas {
+    padding-right: 8px;
+    color: #afb4b9;
+}
+
+.menu-area {
+    background-color: var(--primary);
+}
+
+.menu-area ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-area ul li {
+    padding: 15px 13px;
+}
+
+.menu-area li a {
+    color: #fff;
+}
+
+.menu-area li:hover {
+    background-color: var(--secondary);
+}
+
+.menu-left i.fas {
+    padding-left: 10px;
+}
+
+.menu-right i.fas,
+.menu-right i.far {
+    padding-right: 10px;
+}
+
+.menu-right {
+    float: right;
+}
+
+
+/*Mega Dropdown section start here*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #afb4b9;
+    width: 100%;
+    left: 0;
+    top: 199px;
+    z-index: 99;
+}
+
+.mega-dropdown:hover .dropdown-content {
+    display: block
+}
+
+.product-list {
+    float: right;
+}
+
+.column a {
+    display: table;
+    padding: 10px;
+}
+
+.column a:hover {
+    background-color: var(--secondary);
+}
+
+.column {
+    min-height: 250px;
+    float: none;
+    width: 25% !important;
+    padding: 10px;
+}
+
+.column ul {
+    display: table;
+}
+
+.column ul li {
+    padding: 0;
+}
+
+.column h5 {
+    text-align: left;
+    padding: 10px 0;
+    color: #fff;
+    min-height: 70px;
+}
+
+
+/*Mega Dropdown section end here*/
+
+
+/* Hamburger menu Start Here */
+
+.menu-btn {
+    position: absolute;
+    top: 197px;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 54px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #23609d; */
+    background-color: var(--secondary);
+}
+
+.menu-btn__burger {
+    width: 50px;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-16px);
+}
+
+.menu-btn__burger::after {
+    transform: translateY(16px);
+}
+
+
+/* ANIMATION */
+
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.banner-wrap {
+    width: 100%;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.item-position {
+    align-items: center
+}
+
+.form-control.search-input {
+    background: #F9F9F9;
+    color: #9A9A9A;
+    padding: 4px 15px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px #F9F9F9;
+}
+
+.search-btn {
+    background-color: var(--primary);
+    padding: 4px 25px;
+    color: #fff;
+    border-radius: 0 12px 12px 0;
+}
+
+.search-btn i.fas {
+    line-height: 34px;
+}
+
+.content-adjust {
+    margin-right: 0 !important;
+}
+
+.form-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+
+.header-inner p {
+    margin-bottom: 2px;
+}
+
+.header-inner {
+    margin: 15px 0;
+}
+
+.header-inner img {
+    padding-right: 5px;
+}
+
+
+/*Footer Section Start Here*/
+
+footer {
+    background: var(--primary);
+    margin-top: 140px;
+}
+
+.footer-inner {
+    padding: 60px 20px 10px 20px;
+}
+
+.footer-inner a {
+    color: #fff;
+}
+
+.footer-inner p {
+    color: #fff;
+}
+
+.footer-contact i.fas {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.footer-inner h4 {
+    color: #fff;
+}
+
+.footer-details ul {
+    padding: 0;
+}
+
+.footer-details ul li {
+    padding: 8px 0;
+}
+
+.subscribe-area p {
+    padding: 20px 0;
+}
+
+.subscribe-area input {
+    background: #FFFBFA;
+    padding: 15px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px #FFFBFA;
+}
+
+.sub-btn {
+    background: var(--secondary);
+    padding: 15px 15px;
+    display: block;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+
+.contact-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: baseline;
+    color: #fff;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.footer-social-icon a {
+    display: inline-block;
+    width: 35px;
+    height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    line-height: 40px;
+    margin: 20px 8px 10px 0;
+    background: #fff;
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 5px;
+    border-top: 1px solid #fff;
+    color: #fff;
+}
+
+.footer-banner {
+    text-align: center;
+    color: #474747;
+    display: flex;
+    justify-content: center;
+    background: #F9F9F9;
+    width: 65%;
+    margin: auto;
+    padding: 60px 0;
+    border-radius: 24px;
+    margin-top: -105px;
+}
+
+.footer-banner img {
+    padding-right: 20px;
+}
+
+.footer-banner-text {
+    padding: 10px 0px;
+    text-align: left;
+}
+
+.footer-banner-text h2 {
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.footer-banner-text i.fas {
+    color: #fff;
+    background: var(--primary);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.footer-banner-text h5 {
+    font-weight: 700;
+}
+
+.footer-social-icon a:hover {
+    color: var(--primary) !important;
+}
+
+.footer-inner a:hover {
+    color: #fff;
+}
+
+
+/*Footer Section End Here*/
+
+
+/* SERVICE */
+
+.service-title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--secondary);
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.service-contact {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.service-card:hover {
+    background: var(--primary);
+    box-shadow: 0px 8px 24px 1px rgba(2, 67, 116, 0.4);
+}
+
+.service-card:hover .service-title {
+    color: #fff;
+}
+
+.service-card:hover .service-desc {
+    color: #fff !important;
+}
+
+.service-card:hover .service-contact {
+    color: #fff !important;
+}
+
+
+/* OUR SHOP */
+
+.shop-banner {
+    width: 215px;
+    height: 338px;
+    background: url('/images/service_side.png');
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.shop-banner-top {
+    width: 215px;
+    height: 35px;
+    text-align: center;
+    background-color: #E5E5E5;
+    border-radius: 8px;
+}
+
+.shop-banner-top-text {
+    line-height: 32.79px;
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.arrow-down {
+    position: relative;
+    top: -17px;
+}
+
+.shop-btn {
+    position: relative;
+    top: 273px;
+    left: 45px;
+}
+
+
+/* PRODUCT */
+
+.product-card {
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.review i {
+    color: var(--primary);
+    padding-left: 8px;
+}
+
+.discount {
+    background-image: url('/images/icons/Rectangletop118.png');
+    width: 100px;
+    height: 35px;
+    position: relative;
+    left: 122px;
+    top: -187px;
+}
+
+.discount-text {
+    color: #fff;
+    font-size: 14px;
+    line-height: 37px;
+    margin-left: 30px;
+}
+
+.hover-cart .mini-btn {
+    margin-left: 15px;
+}
+
+.hover-cart {
+    display: none;
+}
+
+.product-card:hover .hover-cart {
+    display: block;
+}
+
+.price {
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product-price {
+    display: block;
+}
+
+.product-card:hover .product-price {
+    display: none;
+}
+
+
+/* OUR VALUES */
+
+.value-desc {
+    width: 70%;
+}
+
+.value-img {
+    border-radius: 6px;
+    height: 70px;
+    width: 70px;
+}
+
+.valuelist-desc {
+    margin-left: 30px;
+}
+
+.value-title {
+    font-size: 24px;
+    line-height: 23px;
+}
+
+
+/* GLANCE */
+
+.glance-bg {
+    background: linear-gradient(to bottom, rgba(29, 53, 102, 0.9), rgba(20, 118, 191, .9)), url("../images/glance-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    overflow: hidden;
+    background-position: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.glance-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.glance-count {
+    font-weight: 700;
+    color: #fff;
+    font-size: 26px;
+    padding-top: 10px;
+}
+
+.glance-desc {
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.glance-line {
+    position: relative;
+    right: -169px;
+    top: -176px;
+}
+
+
+/* OUR RECENT WORK */
+
+.recent-work-tab {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    background-color: #E5E5E5;
+    border-radius: 8px;
+}
+
+.tip-down {
+    position: relative;
+    top: -17px;
+    display: none;
+}
+
+.work-img {
+    border-radius: 16px;
+    margin-top: 20px;
+}
+
+.work-tab-text {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: Center;
+    color: #474747;
+    line-height: 70px;
+}
+
+.recent-work-tab:hover {
+    background-color: var(--primary);
+}
+
+.recent-work-tab:hover .work-tab-text {
+    color: #fff;
+}
+
+.recent-work-tab:hover .tip-down {
+    display: block;
+}
+
+.filter-btn {
+    cursor: pointer;
+}
+
+
+/* COMMON */
+
+p {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'ds-izmir-normal', sans-serif;
+}
+
+.section-title {
+    font-size: 36px;
+    font-family: 'ds-izmir-normal', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 52px;
+    color: var(--secondary);
+}
+
+.section-content {
+    width: 70% !important;
+}
+
+.btn-main {
+    background-color: var(--primary);
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 11.4286px;
+    border-radius: 6.53061px;
+}
+
+.btn-main:hover {
+    color: #fff;
+    background-color: var(--secondary);
+}
+
+.mini-btn {
+    text-decoration: none;
+    padding: 8px 13px;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 6px;
+}
+
+.mini-btn:hover {
+    color: #fff;
+}
+
+del {
+    color: #BDBDBD;
+    margin-left: 8px;
+}
+
+.item {
+    margin-left: 10px;
+}
+
+@media (min-width: 1400px) {
+    .wrapper {
+        width: 1439px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.bg-sec {
+    background-color: #F7F7F7;
+}
+
+
+/* Mahe-- View Carts page Css Start Here */
+
+.HomeBack {
+    margin-right: 5px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: #474747;
+}
+
+.arrowDouble {
+    color: var(--primary);
+}
+
+.viewCartLode {
+    margin-left: 5px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.viewCartLode:hover {
+    color: var(--secondary);
+}
+
+.viewCartsTitle h1 {
+    color: var(--secondary);
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44.2769px;
+    line-height: 64px;
+}
+
+.table-head {
+    background-color: #E5E5E5;
+    color: #666666;
+}
+
+.viewCartTableHeading {
+    border-bottom: none;
+}
+
+.tableBody {
+    background-color: #F9F9F9;
+}
+
+.tableBody tr td img {
+    width: 110px;
+    height: 110px;
+}
+
+.products-data {
+    color: #474747;
+    font-weight: 600;
+    width: 50%;
+    font-size: 24px;
+}
+
+.viewCartProductPrice {
+    font-size: 24px;
+    color: #474747;
+    font-weight: 600;
+}
+
+.total-amount {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.quantity-data {
+    width: 10%;
+}
+
+.cross-btn {
+    color: #C4C4C4;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.subTotalSection {
+    background-color: #F9F9F9;
+}
+
+.checkOut-btn {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    width: 410.97px;
+    margin-top: 20%;
+    height: 61.5px;
+}
+
+.sub-card-title {
+    color: #666666;
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.subTextColor {
+    color: #666666;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.subTotalValue {
+    margin-left: 52%;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.input-minus {
+    position: relative;
+    top: -32px;
+    left: 8px;
+    color: #C4C4C4;
+}
+
+.input-plus {
+    position: relative;
+    top: -32px;
+    left: 54px;
+    color: #C4C4C4;
+}
+
+
+/* Mahe View Carts page Css End Here */
+
+
+/* Checkout page Css Start Here */
+
+.productsBack {
+    left: 241px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #474747;
+    margin-right: 5px;
+}
+
+.myCartsBack {
+    left: 241px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #474747;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.checkOutLoad {
+    margin-left: 5px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.checkOutLoad:hover {
+    color: var(--secondary);
+}
+
+.cheeckout-popup-area {
+    padding: 30px 0;
+}
+
+.modal-header {
+    padding: 0 !important;
+    border-bottom: 0 !important;
+}
+
+.checkOutTitle {
+    color: #666666;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44.3077px;
+    line-height: 64px;
+}
+
+.shippingAddressCard {
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.shipping-title {
+    color: #666666;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.anotherAddressBtn {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 12.3077px;
+    text-align: center;
+    width: 239px;
+    margin-top: 5%;
+    height: 62px;
+    font-size: 22.15px;
+}
+
+.shippingInfoTitle {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 29.5385px;
+    line-height: 42px;
+    color: #666666;
+}
+
+.shippingInfoData {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22.1538px;
+    line-height: 42px;
+    color: #666666;
+}
+
+.yourOrderCard {
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.yourOrder-title {
+    color: #666666;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.productNameList {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.1538px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.productPrice {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.1538px;
+    line-height: 30px;
+    color: #666666;
+    text-align: right;
+}
+
+.borderBottomTable {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.tableWidth {
+    min-width: -webkit-fill-available;
+}
+
+.withBorderBottom {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.productPriceDetails {
+    text-align: right;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.1538px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.produceName {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.6923px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    color: #666666;
+    width: 76%;
+}
+
+.forBold {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21.1538px;
+    padding-top: 30px;
+    color: #666666;
+}
+
+.promoCodeInput {
+    width: 405px;
+    height: 61px;
+    left: 1022px;
+    top: 962px;
+    border: 1.23077px solid #E5E5E5;
+    box-sizing: border-box;
+    background-color: #F9F9F9;
+    font-size: 19.6923px;
+}
+
+.promoCodeInput:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.promoCodeSubmitBtn {
+    width: 184.62px;
+    height: 61.54px;
+    top: 961.85px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    font-size: 22.1538px;
+}
+
+.totalPrice {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.1538px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.checkoutTotalText {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29.5385px;
+    line-height: 42px;
+    color: #666666;
+}
+
+.radioBtn {
+    border: 1px solid #E5E5E5;
+    padding: 10px;
+}
+
+.radioBtn-withoutBorder {
+    padding: 10px;
+}
+
+.radioBtn .form-check-input:checked {
+    background-color: var(--primary);
+    border-color: 1.23077px solid var(--primary);
+}
+
+.radioBtn-withoutBorder .form-check-input:checked {
+    background-color: var(--primary);
+    border-color: 1.23077px solid var(--primary);
+}
+
+.radioBtn .form-check-input:checked[type=radio] {
+    background-image: none !important;
+}
+
+.radioBtn-withoutBorder .form-check-input:checked[type=radio] {
+    background-image: none !important;
+}
+
+.redio-label-active {
+    width: 176px;
+    height: 29.54px;
+    left: 1098.31px;
+    top: 1175px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.1538px;
+    line-height: 30px;
+    color: var(--primary);
+}
+
+.redio-label-nonactive {
+    height: 29.54px;
+    left: 1098.31px;
+    top: 1275.92px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.1538px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.redio-label-terms {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19.6923px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.forSpan {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19.6923px;
+    line-height: 30px;
+    color: var(--primary);
+}
+
+.placeOrderbtn {
+    width: 100%;
+    height: 61px;
+    background: var(--primary);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.1538px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+
+/* Mahe Checkout page Css End Here */
+
+
+/* Mahe Contact Us page Css End Here */
+
+.ContactUsBanner {
+    background-image: linear-gradient( rgba(29, 53, 102, 0.6), rgba(29, 53, 102, 0.6)), url("../images/banner/contactus 1.png");
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.whiteHomeBack {
+    left: 241px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.whiteContactUsBack {
+    left: 241px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.getInTouchDiv {
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.anyQuestionDiv {
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.contactUsDivTitle {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44.4277px;
+    line-height: 64px;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.anyQuestionDivTitle {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44.4277px;
+    line-height: 64px;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.contactUsDivPera {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.7456px;
+    line-height: 30px;
+    text-align: center;
+    color: #666666;
+}
+
+.anyQuestionDivPera {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.7456px;
+    line-height: 30px;
+    text-align: center;
+    color: #666666;
+}
+
+.firstNameInput {
+    width: 100%;
+    height: 61.71px;
+    background: #EFEFEF;
+    border-radius: 14.8092px;
+    border: none;
+    padding-left: 10%;
+}
+
+.firstNameInput:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.lastNameInput {
+    width: 100%;
+    height: 61.71px;
+    background: #EFEFEF;
+    border-radius: 14.8092px;
+    border: none;
+    padding-left: 10%;
+}
+
+.lastNameInput:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.emailAddressInput {
+    width: 100%;
+    height: 61.71px;
+    background: #EFEFEF;
+    border-radius: 14.8092px;
+    border: none;
+    padding-left: 5%;
+}
+
+.emailAddressInput:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.textAreaInput {
+    width: 100%;
+    height: 99.96px;
+    background: #EFEFEF;
+    border-radius: 14.8092px;
+    border: none;
+    padding-left: 5%;
+}
+
+.textAreaInput:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.proposalSubmitBtn {
+    width: 100%;
+    height: 61.71px;
+    background: var(--primary);
+    border-radius: 14.8092px;
+    border: none;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19.7456px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.getInTouchIconSection {
+    padding-left: 3rem!important;
+}
+
+.getInTouchDescription p {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20.2138px;
+    line-height: 21px;
+    color: #474747;
+}
+
+
+/* Mahe Contact Us page Css End Here */
+
+
+/* Mahe Blog page Css Start Here */
+
+.whiteBlogBack {
+    left: 241px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.blogBanner {
+    background-image: linear-gradient( rgba(29, 53, 102, 0.6), rgba(29, 53, 102, 0.6)), url("../images/banner/blogBanner.png");
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blogImgHeroDiv img {
+    width: 100%;
+    border-radius: 22.15px;
+}
+
+
+/* Blog description Tabs Css Start Here */
+
+.blogTab {
+    overflow: hidden;
+}
+
+.blogTabLinks {
+    margin: 23px;
+}
+
+.blogTab button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    height: 36px;
+    width: 34%;
+    color: #666666;
+    font-weight: 600;
+    font-size: 20.15px;
+}
+
+.blogTab button:hover {
+    background-color: #ddd;
+}
+
+.blogTab button.active {
+    background-color: #ccc;
+    color: var(--secondary);
+}
+
+.blogCategoryBtn {
+    width: 15%;
+    background: #E5E5E5;
+    border-radius: 7.38333px;
+    font-family: Izmir;
+    font-style: normal;
+    line-height: 30px;
+    color: #666666;
+    border: none;
+    margin-left: 14px;
+}
+
+.blogCategoryBtn:hover {
+    color: var(--secondary);
+}
+
+.serviceTabContent {
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.updatesDiv {
+    display: none;
+}
+
+.serviceTabContent h3 {
+    font-weight: bold;
+    font-size: 27.9944px;
+    color: #474747;
+}
+
+.serviceTabContent p {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.6889px;
+    line-height: 30px;
+    color: #474747;
+}
+
+.serviceReadMore {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 22.15px;
+}
+
+.blogPostTimeCard {
+    display: flex;
+    margin-top: 29px;
+}
+
+.blogPostTimeCard p {
+    margin-right: 20px;
+    color: var(--secondary);
+    background-color: #F9F9F9;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Blog description Tabs Css Start Here */
+
+
+/* Blog Card Section Css Start Here */
+
+.blogCard {
+    border: none;
+    margin-bottom: 5%;
+}
+
+.blogCardImg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardNotification {
+    display: flex;
+}
+
+.cardNotificationText {
+    padding: 5px;
+    color: var(--secondary);
+    font-size: 12px;
+}
+
+.cardNotificationHeading {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.15px;
+    line-height: 32px;
+    color: var(--secondary);
+}
+
+.cardNotificationDescription {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.6889px;
+    line-height: 30px;
+    color: #666666;
+}
+
+
+/* Blog Card Section Css End Here */
+
+
+/* Recent Blog Post Css Start Here */
+
+.recentSearchInput {
+    width: 64%;
+    height: 61.53px;
+    padding: 5%;
+    background: #E5E5E5;
+    border-radius: 14.7667px;
+    border: none;
+}
+
+.recentSearchInput:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.recentSearchBtn {
+    position: relative;
+    width: 34%;
+    height: 61.53px;
+    left: -15px;
+    background: var(--primary);
+    border-radius: 0px 14.7667px 14.7667px 0px;
+    color: #fff;
+    border: none;
+}
+
+.postSuggestTitle {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31.9944px;
+    line-height: 44px;
+    color: var(--secondary);
+}
+
+.postSuggestImg {
+    border-radius: 5px;
+    /* width: -webkit-fill-available; */
+    width: 100%;
+}
+
+.postSuggestCategoryName {
+    color: var(--secondary);
+    margin-bottom: 6px;
+}
+
+.recentPostSuggestionTitle {
+    color: #474747;
+    font-weight: 600;
+}
+
+.recentPostDateReminder {
+    color: var(--secondary);
+    background: #F9F9F9;
+    padding: 6px;
+    width: 73%;
+}
+
+
+/* Recent Blog Post Css End Here */
+
+
+/* Blog Tags Css Start Here */
+
+.blogTagsTitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31.9944px;
+    line-height: 44px;
+    color: var(--secondary);
+}
+
+.tagsBtnSingle {
+    background-color: #fff;
+    color: #666666;
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    margin: 12px;
+    border-radius: 5px;
+}
+
+.tagsBtnSingle:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+
+/* Blog Tags Css End Here */
+
+
+/* Blog Pagination Css Start Here */
+
+.blogPaginationItem {
+    margin-left: 10px;
+}
+
+.blogPaginationItemLink {
+    background-color: #E5E5E5;
+    color: #666666;
+    text-decoration: none;
+    font-size: 19.6889px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.blogPaginationItemLink:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.blogPaginationItemLinkLast {
+    background-color: #BDBDBD;
+    color: #666666;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 19.6889px;
+    border-radius: 5px;
+}
+
+.blogPaginationItemLinkLast:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+
+/* Blog Pagination Css End Here */
+
+
+/* Blog NewsLetter Css Start Here */
+
+.newsLetterDivBg {
+    background-color: #EDF0F5;
+    padding: 4%;
+    border-radius: 29.5333px;
+    margin-bottom: 10px;
+}
+
+.inputGroup {
+    text-align: center;
+}
+
+.newsLetterTag {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.15px;
+    line-height: 30px;
+    color: var(--secondary);
+}
+
+.newsLetterHeading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44.3px;
+    line-height: 64px;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.newsLetterDescription {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.6889px;
+    line-height: 30px;
+    text-align: center;
+    color: #474A4D;
+    width: 58%;
+    margin-left: 21%;
+}
+
+.newsLetterInput {
+    width: 60%;
+    background: #FFFBFA;
+    border-radius: 10.6889px;
+    color: #CACACA;
+    padding: 23px;
+    margin-left: 14%;
+    border: none;
+}
+
+.newsLetterInput:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.newsLetterBtn {
+    width: 13%;
+    left: -15%;
+    padding: 10px;
+    color: white;
+    background: var(--secondary);
+    border-radius: 9.84445px;
+    position: relative;
+    border: none;
+}
+
+
+/* Blog NewsLetter Css End Here */
+
+
+/* Mahe Blog page Css End Here */
+
+
+/* Mahe Blog Details page Css Start Here */
+
+.blogDetailsPageCategoryBtn {
+    width: 15%;
+    background: #E5E5E5;
+    border-radius: 7.38333px;
+    font-family: Izmir;
+    font-style: normal;
+    line-height: 30px;
+    color: #666666;
+    border: none;
+    margin-left: 14px;
+}
+
+.blogDetailsPageCategoryBtn:hover {
+    color: var(--secondary);
+}
+
+.blogDetailsTitle {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44.3034px;
+    line-height: 64px;
+    text-align: center;
+    color: #474747;
+}
+
+.blogDetailsHeroImg {
+    height: 692.35px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.blogDetailsPostTimeCard {
+    display: flex;
+}
+
+.imgBtnGroup {
+    justify-content: space-between;
+}
+
+.blogDetailsCategoryBtnGroup {
+    display: flex;
+}
+
+.blogDetailsCategoryBtnMargin {
+    margin-left: 10px;
+}
+
+.blogDetailsCategoryBtn {
+    width: 170px;
+    background: #E5E5E5;
+    border-radius: 7.38333px;
+    font-family: Izmir;
+    font-style: normal;
+    line-height: 30px;
+    color: #666666;
+    border: none;
+    margin-left: 14px;
+}
+
+.blogDetailsCategoryBtn:hover {
+    color: var(--secondary);
+}
+
+.blogDetailsPostTimeCard p {
+    margin-right: 20px;
+    color: var(--secondary);
+    background-color: #F9F9F9;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.blogDetailsPostTimeCard p:hover {
+    cursor: pointer;
+}
+
+.description {
+    margin-bottom: 35px;
+}
+
+.blogDescription {
+    font-family: Izmir;
+    font-style: normal;
+    font-size: 24.613px;
+    line-height: 34px;
+    color: #474747;
+}
+
+.blogDescriptionSpan {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44.3034px;
+}
+
+.descriptionWithBG {
+    background-color: var(--primary);
+    padding: 84px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.blogDescriptionWhite {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31.9969px;
+    color: #FFFFFF;
+}
+
+.blogDescriptionQuestion1 {
+    font-size: 40px;
+    width: 100%;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.blogDescriptionQuestion2 {
+    font-size: 30px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.socialIconsLink {
+    background: #F9F9F9;
+    padding: 46px;
+}
+
+.shareItOnTitle {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.1517px;
+    line-height: 30px;
+    color: var(--secondary);
+}
+
+.socialIconColor {
+    color: #666666;
+    font-size: 30px;
+    margin-top: -7px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.blogDetailsCommentCount {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31.9969px;
+    line-height: 44px;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.detailsCommentSection {
+    margin-bottom: 20px;
+}
+
+.blogDetailsCommentImg {
+    height: 87px;
+    width: 87px;
+}
+
+.blogDetailsCommentText {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24.613px;
+    line-height: 34px;
+    color: #474747;
+    margin-left: 32px;
+}
+
+.commentPersonTitle {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29.5356px;
+    line-height: 42px;
+    color: var(--secondary);
+}
+
+.blogDetailsCommentTimeCard {
+    display: flex;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.blogDetailsCommentTimeCard p {
+    margin-right: 20px;
+    color: var(--secondary);
+    background-color: #F9F9F9;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.blogDetailsCommentTimeCard p:hover {
+    cursor: pointer;
+}
+
+.blogDetailsCommentPersonName {
+    margin-left: 9%;
+}
+
+.detailsCommentSection2 {
+    margin-bottom: 20px;
+    margin-left: 9%;
+}
+
+.blogDetailsCommentPersonName2 {
+    margin-left: 18%;
+}
+
+.leaveACommentText {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31.9969px;
+    line-height: 44px;
+    color: var(--secondary);
+}
+
+.leaveACommentInput {
+    width: 100%;
+    height: 61.53px;
+    padding-left: 38px;
+    background: #F9F9F9;
+    border: none;
+    border-radius: 14.7678px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.6904px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.leaveACommentInput:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.leaveACommentTextArea {
+    width: 100%;
+    height: 221.52px;
+    padding: 36px;
+    margin-top: 3%;
+    background: #F9F9F9;
+    border-radius: 14.7678px;
+    border: none;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.6904px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.leaveACommentTextArea:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.commentSubmitButton {
+    width: 332.28px;
+    height: 61.53px;
+    left: 240px;
+    top: 5750.26px;
+    background: var(--primary);
+    border-radius: 14.7678px;
+    border: none;
+    margin-top: 3%;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19.6904px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.relatedBlogTitle {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44.3034px;
+    line-height: 64px;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.relatedSliderCard {
+    border: none;
+    margin-bottom: 5%;
+}
+
+.relatedSliderCardImg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.relatedBlogCardSlider {
+    display: flex;
+}
+
+.relatedBlogCardSliderText {
+    padding: 8px;
+    color: var(--secondary);
+    font-size: 13px;
+}
+
+.relatedBlogCardSliderHeading {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.15px;
+    line-height: 32px;
+    color: var(--secondary);
+}
+
+.relatedBlogCardSliderDescription {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.6889px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.relatedSliderArrowPre {
+    background: var(--primary);
+    position: relative;
+    width: 3% !important;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    top: 171px;
+    left: -34px;
+}
+
+.relatedSliderArrowNext {
+    background: #BDBDBD;
+    position: relative;
+    width: 3% !important;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    top: -462px;
+    left: 100%;
+}
+
+
+/* Mahe Blog Details page Css End Here */
+
+
+/* Mahe AC Installation Page CSS Start Here */
+
+
+/* AC Installation Page Header Section Css Start  */
+
+.workPriceBack {
+    margin-left: 5px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.acInstallationHeaderTitle {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34.4356px;
+    text-align: center;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.acInstallationHeaderDescription {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.6775px;
+    text-align: center;
+    color: #474747;
+}
+
+
+/* AC Installation Page Header Section Css End  */
+
+.acInstallationHeaderContent {
+    width: 92% !important;
+}
+
+
+/* Split AC Installation Header CSS Start Here */
+
+.splitHeader {
+    background: var(--secondary);
+    border-radius: 9.83874px;
+    margin-top: 5%;
+}
+
+.splitHeaderText {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24.5969px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.splitTable {
+    border-radius: 20px;
+    border: 1px solid #E5E5E5;
+}
+
+.splitAcTableHead {
+    background-color: #E5E5E5 !important;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24.5969px;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.splitAcTableHeader {
+    background-color: #F6F5F5 !important;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.6775px;
+    color: var(--secondary);
+    border-radius: 10px;
+}
+
+.splitAcTableHeaderComponent {
+    border: 1px solid #E5E5E5;
+}
+
+.splitAcTableHeaderData {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #474747;
+    border: 1px solid #E5E5E5;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+
+/* Split AC Installation Header CSS End Here */
+
+
+/* Window AC Installation Header CSS Start Here */
+
+.windowHeader {
+    background: var(--secondary);
+    border-radius: 9.83874px;
+    margin-top: 6%;
+}
+
+.windowHeaderText {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24.5969px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.windowTable {
+    border-radius: 20px;
+    border: 1px solid #E5E5E5;
+}
+
+.windowAcTableHead {
+    background-color: #E5E5E5 !important;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24.5969px;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.windowAcTableHeader {
+    background-color: #F6F5F5 !important;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.6775px;
+    color: var(--secondary);
+    border-radius: 10px;
+}
+
+.windowAcTableHeaderComponent {
+    border: 1px solid #E5E5E5;
+}
+
+.windowAcTableHeaderData {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #474747;
+    border: 1px solid #E5E5E5;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+
+/* Window AC Installation Header CSS End Here */
+
+
+/* VRF AC Installation Header CSS Start Here */
+
+.vrfHeader {
+    background: var(--secondary);
+    border-radius: 9.83874px;
+    margin-top: 6%;
+}
+
+.vrfHeaderText {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24.5969px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.vrfTable {
+    border-radius: 20px;
+    border: 1px solid #E5E5E5;
+}
+
+.vrfAcTableHead {
+    background-color: #E5E5E5 !important;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24.5969px;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.vrfAcTableHeader {
+    background-color: #F6F5F5 !important;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.6775px;
+    color: var(--secondary);
+    border-radius: 10px;
+}
+
+.vrfAcTableHeaderComponent {
+    border: 1px solid #E5E5E5;
+}
+
+.vrfAcTableHeaderData {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #474747;
+    border: 1px solid #E5E5E5;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+.vrfTableNoteText {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19.6775px;
+    color: var(--primary);
+}
+
+
+/* VRF AC Installation Header CSS End Here */
+
+
+/* VRF AC Package Installation Header CSS Start Here */
+
+.vrfPackageHeader {
+    background: var(--secondary);
+    border-radius: 9.83874px;
+    margin-top: 6%;
+}
+
+.vrfPackageHeaderText {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24.5969px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.vrfPackageTable {
+    border-radius: 20px;
+    border: 1px solid #E5E5E5;
+}
+
+.vrfPackageAcTableHead {
+    background-color: #E5E5E5 !important;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24.5969px;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.vrfPackageAcTableHeader {
+    background-color: #F6F5F5 !important;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.6775px;
+    color: var(--secondary);
+    border-radius: 10px;
+}
+
+.vrfPackageAcTableHeaderComponent {
+    border: 1px solid #E5E5E5;
+}
+
+.vrfPackageAcTableHeaderData {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #474747;
+    border: 1px solid #E5E5E5;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+.vrfPackageTableNoteText {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19.6775px;
+    color: var(--primary);
+}
+
+
+/* VRF AC Package Installation Header CSS End Here */
+
+
+/* AC Installation Page Mid Banner CSS Start Here */
+
+
+/* .acInstallationMidBanner {
+    background-image: linear-gradient( rgb(29, 53, 102, 0.9), rgb(20, 118, 191, 0.9)), url("../images/banner/acInstallationBanner.png");
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 360px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.acInstallationMidBannerTitle {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+} */
+
+
+/* AC Installation Page Mid Banner CSS End Here */
+
+
+/* AC Installation Page Work Slider CSS Start Here */
+
+.installationSliderBtn {
+    background-color: var(--primary);
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 6.53061px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.installationSliderBtn:hover {
+    color: #fff;
+    background-color: var(--secondary);
+}
+
+
+/* AC Installation Page Work Slider CSS End Here */
+
+
+/* AC Installation Page testimonial Slider CSS Start Here */
+
+.testimonialSliderHeaderTitle {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.testimonialSliderHeaderContent {
+    width: 85% !important;
+}
+
+
+/* Splite Ac Pricing Start Here*/
+
+.pricing-note p {
+    color: var(--primary);
+}
+
+
+/* Splite Ac Pricing End Here*/
+
+
+/* For Testimonial Slider Start Here*/
+
+.testimonialSliderBg {
+    background: linear-gradient(270deg, rgba(251, 251, 251, 0) -43.05%, #E2E5EB 50%, rgba(249, 249, 249, 0) 141.36%);
+    opacity: 0.7;
+    border-radius: 24px;
+    width: 80%;
+}
+
+.vehicle-detail-banner .car-slider-desc {
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.banner-slider {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.banner-slider .slider.slider-for {
+    max-width: 84%;
+    padding-right: 35px;
+}
+
+.banner-slider .slider.slider-nav {
+    max-width: 16%;
+}
+
+.banner-slider .slider.slider-for,
+.banner-slider .slider.slider-nav {
+    width: 100%;
+    float: left;
+}
+
+.banner-slider .slider.slider-nav {
+    height: 464px;
+    overflow: hidden;
+}
+
+.slider-banner-image {
+    height: 610px;
+}
+
+.banner-slider .slider.slider-nav {
+    padding: 26px 0 0;
+}
+
+.slider-nav .slick-slide.thumbnail-image .thumbImg {
+    /* max-width: 78%; */
+    height: 110px;
+    margin: 0 auto;
+    /* border: 1px solid #EBEBEB; */
+}
+
+.slider-banner-image img {
+    height: 140px;
+    width: 140px;
+}
+
+.slider-banner-image img,
+.slider-nav .slick-slide.thumbnail-image .thumbImg img {
+    height: 100%;
+    width: 78%;
+    object-fit: cover;
+}
+
+.thumbImg img {
+    height: 80%;
+    /* width: 78%; 
+    */
+    object-fit: cover;
+    margin: auto;
+}
+
+.slick-vertical .slick-slide:active,
+.slick-vertical .slick-slide:focus,
+.slick-arrow:hover,
+.slick-arrow:focus {
+    border: 0;
+    outline: 0;
+}
+
+.slider-nav .slick-slide.slick-current.thumbnail-image .thumbImg {
+    border: none;
+}
+
+.slider-nav .slick-slide.slick-current span {
+    margin-bottom: 5%;
+}
+
+.slider-nav .slick-slide {
+    text-align: center;
+}
+
+.slider-nav .slick-slide span {
+    font-size: 14px;
+    display: block;
+    padding: 5px 0 15px;
+}
+
+.tsSliderImage {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.tsSliderStar {
+    color: #F2994A;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.tsSingleStart {
+    padding: 4px;
+}
+
+.tsSliderDes {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: var(--secondary);
+}
+
+.tsSliderName {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--secondary);
+}
+
+.tsSliderSubName {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #474A4D;
+    margin-bottom: 5%;
+}
+
+
+/*End USE CSS for Slider*/
+
+@media screen and (max-width: 991px) {
+    .banner-slider .slider.slider-for,
+    .banner-slider .slider.slider-nav {
+        max-width: 100%;
+        float: none;
+    }
+    .banner-slider .slider.slider-for {
+        padding-right: 0;
+    }
+    .banner-slider .slider.slider-nav {
+        height: auto;
+    }
+    .slider-banner-image {
+        height: 500px;
+    }
+    .slider.slider-nav.thumb-image {
+        padding: 10px 30px 0;
+    }
+    .slider-nav .slick-slide span {
+        padding: 5px 0;
+    }
+    .vehicle-detail-banner .car-slider-desc {
+        max-width: 340px;
+    }
+    .bid-tag {
+        padding: 10px 0 15px;
+    }
+    .slider.slider-nav.thumb-image {
+        white-space: nowrap;
+    }
+    .thumbnail-image.slick-slide {
+        padding: 0px 5px;
+        min-width: 75px;
+        display: inline-block;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slider-banner-image {
+        height: 400px;
+    }
+    .slider.slider-nav.thumb-image {
+        padding: 0px 20px 0;
+        margin: 10px 0px 0;
+    }
+    .slider-nav .slick-slide.thumbnail-image .thumbImg {
+        max-width: 78%;
+        height: 80px;
+    }
+    .slider-nav .slick-slide span {
+        font-size: 12px;
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .slider-banner-image {
+        height: 340px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slider-banner-image {
+        height: 280px;
+    }
+}
+
+
+/* For Testimonial Slider End Here*/
+
+
+/* AC Installation Page testimonial Slider CSS End Here */
+
+
+/* Mahe AC Installation Page CSS End Here */
+
+
+/* Mahe Products Page CSS Start Here */
+
+.productsBack {
+    margin-left: 5px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+
+/* Products page Sidebar CSS Start Here */
+
+.cardSidebar {
+    background: #F9F9F9;
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+
+.sidebarHead {
+    background-color: var(--primary);
+    border-radius: 16px 16px 0px 0px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.sidebarContent {
+    padding: 5px;
+}
+
+.sidebarContentHead {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--secondary);
+}
+
+.sidebarCheckBoxValue {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #666666;
+}
+
+.sidebarCheckBox {
+    border: 1px solid var(--secondary) !important;
+}
+
+.sidebarToggleDiv {
+    display: none;
+}
+
+.divShow {
+    display: block !important;
+}
+
+.appendDown {
+    display: none !important;
+    float: right;
+}
+
+.appendRight {
+    display: none !important;
+    float: right;
+}
+
+.appendDown.arrowShow {
+    display: block !important;
+    float: right;
+}
+
+.appendRight.arrowShow {
+    display: block !important;
+    float: right;
+}
+
+
+/* Price Range Slider Css Start here */
+
+
+/* Price Range Slider Css End here */
+
+
+/* Products page Sidebar CSS End Here */
+
+
+/* Products page Main Content CSS Start Here */
+
+
+/* Products page Slider Css Start Here*/
+
+.productSlider img {
+    height: 218px;
+    border-radius: 20px;
+}
+
+.productSliderBtnGroup {
+    justify-content: space-between;
+}
+
+.cetagoryText {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--secondary);
+}
+
+.cetagoryViewAllBtn {
+    float: right;
+    background-color: var(--secondary);
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+}
+
+
+/* For Advertise Slider CSS Start Here */
+
+.advrSliderDiv {
+    margin-top: 10px;
+}
+
+.advrCard {
+    margin-left: 10px;
+    width: 177.19px;
+    height: 137.36px;
+}
+
+.advrCardTitle {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.advertiseArrowPre {
+    background: #BDBDBD;
+    position: relative;
+    width: 3% !important;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    top: 68px;
+    left: 3px;
+    z-index: 10;
+}
+
+.advertiseArrowNext {
+    background: #BDBDBD;
+    position: relative;
+    width: 3% !important;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    top: -105px;
+    left: 98%;
+}
+
+
+/* For Advertise Slider CSS End Here */
+
+
+/* Products Page Grid and List Header CSS Start Here */
+
+.gridHeader {
+    background: #F9F9F9;
+    border-radius: 6px;
+    width: 100%;
+    height: 68.68px;
+    margin-bottom: 10px;
+}
+
+.gridListDiv {
+    justify-content: space-between;
+}
+
+.sortByDiv {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sortByName {
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #474747;
+    margin-right: 21px;
+}
+
+.sortByDropDown {
+    background: #FFFFFF;
+    border-radius: 6px;
+    height: 32px;
+    border: none;
+    font-family: Izmir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #474747;
+    padding-left: 10px;
+}
+
+.gridListIconDiv {
+    padding: 10px;
+}
+
+.gridListIcon {
+    font-size: 41px;
+    color: var(--secondary);
+    padding: 5px;
+}
+
+
+/* All Categories Brand Start Here */
+
+.brand-area a img {
+    width: 100%;
+    height: 74px;
+}
+
+.brand-area a {
+    display: block;
+    border: 1px solid #E5E5E5;
+    min-height: 74px;
+    margin-bottom: 20px;
+}
+
+.brand-area a:hover {
+    box-shadow: 6px 9px 5px 0px rgba(142, 108, 154, 0.41);
+    -webkit-box-shadow: 6px 9px 5px 0px rgba(142, 108, 154, 0.41);
+    -moz-box-shadow: 6px 9px 5px 0px rgba(142, 108, 154, 0.41);
+    transition: .3s;
+}
+
+
+/* All Categories Brand End Here */
+
+
+/* Categories Acc Brands Start Here */
+
+.brand-area.acc-brand img {
+    height: 166px;
+}
+
+.brand-area.acc-brand a {
+    min-height: 166px;
+}
+
+.brand-area.acc-brand h4 {
+    color: var(--secondary);
+    margin-top: -45px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/* Categories Acc Brands End Here */
+
+
+/* MyCart Page Start Here */
+
+.mycart-heading {
+    background-color: #F9F9F9;
+    color: #666666;
+    padding: 35px;
+    border: 1px solid #E5E5E5
+}
+
+.mycart-heading h4 {
+    font-weight: 700;
+}
+
+.mycart-heading a {
+    display: inline-flex;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 13px 50px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.mycart-form {
+    background-color: #F9F9F9;
+    color: #666666;
+    padding: 30px 50px;
+    margin-bottom: 40px;
+    border: 1px solid #E5E5E5
+}
+
+.mycart-form a {
+    display: block;
+    padding: 10px 40px;
+    margin: 15px 0;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.mycart-area a:hover {
+    color: #fff;
+}
+
+.mycart-form a i.fab {
+    margin-right: 10px;
+}
+
+.mycart-form input {
+    border: 1px solid #E5E5E5;
+    width: 100%;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.mycart-form p {
+    margin-top: 15px;
+}
+
+div.mycart-form>form>a:nth-child(6) {
+    background-color: var(--primary);
+}
+
+div.mycart-form>form>a:nth-child(7) {
+    color: #666666;
+}
+
+div.mycart-form>form>a:nth-child(8) {
+    background-color: #559CE4;
+}
+
+div.mycart-form>form>a:nth-child(9) {
+    background-color: #092642;
+}
+
+div.mycart-form>form>a:nth-child(10) {
+    color: var(--secondary);
+}
+
+
+/* MyCart Page End Here */
+
+
+/* Registration Page Start Here */
+
+.mycart-form.registration-form>form>a:nth-child(11) {
+    background-color: var(--primary);
+}
+
+.mycart-form.registration-form>form>a:nth-child(12) {
+    color: #666666;
+}
+
+.mycart-form.registration-form>form>a:nth-child(13) {
+    background-color: #559CE4;
+}
+
+.mycart-form.registration-form>form>a:nth-child(14) {
+    background-color: #092642;
+}
+
+
+/* Registration Page End Here */
+
+
+/*Popup Page Start Here*/
+
+.popup-box {
+    background-color: #F9F9F9;
+    border: 1px solid #E5E5E5;
+    padding: 42px 60px;
+    color: #666666;
+}
+
+.popup-box {}
+
+.popup-form p {
+    margin-top: 20px;
+}
+
+.popup-form input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+}
+
+.popup-btn {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.popup-btn:hover {
+    color: #fff
+}
+
+.popup-form .heading {
+    display: block;
+    margin: 20px 0;
+}
+
+
+/* Popup Page End Here*/
+
+
+/* About Us Page Start Here*/
+
+/* .about-us-big-bg {
+    background-image: url(../images/image\ 25.png)
+}
+
+.about-us-area {
+    position: relative;
+    min-height: 400px;
+    margin-top: 15px;
+    padding: 30px 0px;
+}
+
+.about-us-area h2 {
+    padding-bottom: 20px;
+}
+
+.about-us-small-bg {
+    background-image: url(../images/Rectangle\ 291.png)
+}
+
+.about-us-big-bg {
+    position: absolute;
+    left: 41px;
+    top: 0;
+    width: 439px;
+    height: 360px;
+    background-position: center;
+    border-radius: 10px;
+    background-size: cover;
+    z-index: 1;
+}
+
+.about-us-small-bg {
+    position: absolute;
+    left: 235px;
+    top: 34px;
+    width: 350px;
+    height: 290px;
+    background-position: center;
+    border-radius: 10px;
+    border: 1px solid #E5E5E5;
+    background-size: cover;
+    z-index: 2;
+} */
+
+/* === About Us Image start*/ 
+.about-us-small-bg {
+    margin-left: -239px;
+    margin-top: 30px;
+}
+
+.about-us-small-bg img {
+    border-radius: 20px;
+    height: 333px;
+    width: 430px;
+}
+
+.about-us-big-bg img {
+    border-radius: 20px;
+    height: 397px;
+    width: 435px;
+}
+/* === About Us Image End*/ 
+
+
+
+.mission-area {
+    background-color: #F5FDFF;
+    padding: 25px 0;
+    min-height: 250px;
+}
+
+.feature-area h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.feature-area {
+    margin-top: 35px;
+}
+
+.mission-inner {
+    display: flex;
+}
+
+.mission-details {
+    padding: 0 25px;
+}
+
+.feature-box {
+    text-align: center;
+}
+
+.feature-box {
+    padding: 20px 41px;
+}
+
+.feature-box-inner {
+    margin-bottom: 15px;
+}
+
+.feature-box h5 {
+    padding: 0 10px;
+}
+
+
+/* About Us Page End Here*/
+
+
+/* Signup Us Page Start Here*/
+
+.signup-area-left {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 62px 0;
+}
+
+.signup-area {
+    margin: 50px 0;
+}
+
+.signup-banner-text {
+    color: #fff;
+    padding: 20px 80px;
+}
+
+.signup-banner-text p {
+    color: #fff;
+}
+
+.contact-us ul {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us li a {
+    color: #fff;
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+.contact-us {
+    padding: 30px 0;
+}
+
+.toggle-section a {
+    justify-content: center;
+    display: inline-flex;
+    color: #fff;
+    background: var(--primary);
+    font-weight: 600;
+    align-items: center;
+    height: 60px;
+    width: 273px;
+}
+
+.toggle-section {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+div.toggle-section>a:nth-child(1) {
+    background-color: #E5E5E5;
+    color: #ABABAB;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+div.toggle-section>a:nth-child(2) {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+div.toggle-section>a:nth-child(2):hover {
+    color: #fff
+}
+
+.sigup-form {
+    padding: 20px 0;
+    display: none;
+}
+
+.signup-area-right {
+    margin: 80px 0;
+}
+
+.input-box input {
+    padding: 11px 20px;
+    width: 100%;
+    border: 1px solid #E5E5E5;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.input-box {
+    margin: 20px 0;
+    display: flex;
+}
+
+.input-box i.fas {
+    display: inline-flex;
+    background-color: #E5E5E5;
+    color: #666666;
+    padding: 15px 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.signup-checkbox {
+    margin: 20px 0;
+}
+
+.active {
+    display: block !important;
+}
+
+.login-form {
+    display: none;
+}
+
+
+/* Signup Us Page End Here*/
+
+
+/* Project Details Page Start Here*/
+
+.project-name {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.project-name span {
+    display: block;
+}
+
+.project-img img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.project-img p {
+    margin-top: 30px;
+}
+
+.project-name p {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.project-name span {
+    color: var(--secondary);
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+.project-details {
+    background-color: #F3F3F3;
+    padding: 40px 30px;
+    border-radius: 20px;
+}
+
+.project-details span {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.project-details p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.project-details span {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.project-gallery h4 {
+    margin-bottom: 20px;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.gallery-image {
+    margin-bottom: 20px;
+}
+
+.gallery-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+/* Project Details Page End Here*/
+
+
+/* Project Details 2 Page Start Here*/
+
+.project-details-top {
+    text-align: center;
+    padding: 0px 175px;
+    margin-bottom: 60px;
+}
+
+.project-details-top h3 {
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.customer-box {
+    background: linear-gradient(270deg, rgba(251, 251, 251, 0) -43.05%, #E2E5EB 50%, rgba(249, 249, 249, 0) 141.36%);
+    text-align: center;
+    padding: 35px;
+    border-radius: 24px;
+    color: var(--secondary);
+    margin-bottom: 25px;
+}
+
+.customer-box p {
+    color: var(--secondary);
+    padding: 20px 0;
+}
+
+.customer-box i.fas {
+    padding-right: 5px;
+    margin-top: 20px;
+    color: #F2994A;
+}
+
+.customer-img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Project Details 2 Page End Here*/
+
+
+/* Single Product Page Start Here*/
+
+.product-details h5 {
+    color: var(--secondary);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.product-details {
+    color: #666666;
+    font-weight: 700;
+}
+
+.product-details ul {
+    padding: 0;
+}
+
+.product-details ul li {
+    padding: 5px 0;
+}
+
+.product-details li span {
+    padding-left: 5px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-input {
+    outline: none;
+    user-select: none;
+    text-align: center;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E5E5E5;
+    padding: 6px 6px;
+    background: transparent;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.quantity-btn {
+    padding: 6px 12px;
+    border: 1px solid #E5E5E5;
+    background: transparent;
+}
+
+.quantity-btn i.fas {
+    color: #A3A3A3;
+}
+
+.purchase-info {
+    display: flex;
+}
+
+.add-card-btn {
+    background: var(--primary);
+    color: #fff;
+    padding: 11px 58px;
+    border-radius: 6px;
+    margin: 0 20px;
+}
+
+.purchase-info i.far {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.new-price {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.del-price del {
+    color: #666666;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 25px;
+}
+
+.price-discount {
+    background: var(--primary);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.price-tag {
+    margin: 30px 0;
+}
+
+.product-review {
+    display: flex;
+    margin: 20px 0;
+}
+
+.product-review ul {
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.product-review span {
+    color: var(--primary);
+    font-weight: 600;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.product-review ul li {
+    color: #559CE4;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.product-review a {
+    color: #559CE4;
+    font-size: 11px;
+}
+
+.social-connect ul {
+    padding: 0;
+    display: flex;
+}
+
+.social-connect ul li {
+    background: #828282;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social-connect li a {
+    color: #fff;
+}
+
+.product-wrapper {
+    padding: 0 10px;
+}
+
+.product-wrapper {
+    padding: 0 10px;
+}
+
+.product-wrapper p {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.info-btn-box {
+    margin: 30px 0;
+}
+
+.info-btn-box a {
+    background: #F2F2F2;
+    color: #666666;
+    height: 62px;
+    width: 208px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -5px;
+    position: relative;
+    font-size: 14px;
+    border: 2px solid #F2F2F2;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.info-btn-box a:hover {
+    color: #666666;
+}
+
+.btn-active {
+    background: var(--primary) !important;
+    color: #fff !important;
+    border: 2px solid var(--primary);
+}
+
+.btn-active:after {
+    position: absolute;
+    content: '';
+    width: 34px;
+    height: 34px;
+    top: 72%;
+    left: 50%;
+    margin-left: -17px;
+    border-top: 0px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+    border-left: 0px solid var(--primary);
+    background: var(--primary);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.active-box {
+    display: block !important;
+}
+
+.description-box {
+    display: none;
+    margin: 60px 0;
+}
+
+.additional-info {
+    display: none;
+    margin: 60px 0;
+}
+
+.additional-th {
+    color: #666666;
+    font-weight: 700;
+    border-right: 1px solid #E2E2E2;
+    border-left: 1px solid #E2E2E2;
+    padding: 10px 20px;
+}
+
+.additional-table>tbody>tr:nth-of-type(odd) {
+    background: #F7F6F6;
+}
+
+.table-striped>tbody>tr>td {
+    border-right: 1px solid #E2E2E2;
+}
+
+.warranty-box {
+    display: none;
+    margin: 60px 0;
+}
+
+.review-box {
+    display: none;
+    margin: 60px 0;
+}
+
+div.info-btn-box>a:nth-child(1) {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+div.info-btn-box>a:nth-child(4) {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.description-box p {
+    margin-top: 50px;
+    color: #666666;
+}
+
+.description-box ul {
+    padding: 0;
+}
+
+.description-box ul li {
+    padding: 5px 0;
+    color: #666666;
+}
+
+.description-box li span {
+    padding-left: 5px;
+}
+
+.add-card-btn:hover {
+    color: #fff;
+}
+
+.purchase-info i.far {
+    color: var(--primary);
+}
+
+.product-review a:hover {
+    color: var(--primary);
+}
+
+.product-review a {
+    color: var(--primary);
+}
+
+
+/* Single Product Page End Here*/
+
+
+/*Service Page Start Here*/
+
+.service-banner {
+    background-image: linear-gradient( rgba(29, 53, 102, 0.6), rgba(29, 53, 102, 0.6)), url(../images/ac-installation-img\ 1.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.services-details {
+    margin: 60px 0;
+}
+
+.services-box {
+    background-color: #F9F9F9;
+    color: var(--secondary);
+    font-weight: 700;
+    padding: 40px 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services-box a {
+    color: var(--secondary);
+}
+
+.services-box p {
+    color: #474747;
+}
+
+.services-box h3 {
+    margin-bottom: 20px;
+}
+
+.services-box i.fas {
+    padding-left: 10px;
+    font-size: 20px;
+    vertical-align: bottom;
+}
+
+.services-box a:hover {
+    color: var(--secondary);
+}
+
+.service-banner h1 {
+    padding-top: 50px;
+}
+
+
+/*Service Page End Here*/
+
+
+/*Our Recent Work Page Start Here*/
+
+.service-banner p {
+    margin-top: 15px;
+}
+
+
+/*Our Recent Work Page End Here*/
+
+
+/* All Categories Brand End Here */
+
+
+/* Products Page Grid and List Header CSS End Here */
+
+
+/* Products page Slider Css End Here*/
+
+
+/* Products page Main Content CSS End Here */
+
+
+/* Mahe Products Page CSS End Here */
+
+
+/* Media Query*/
+
+@media (max-width:560px) {
+    .mycart-form {
+        padding: 20px 0;
+        margin-bottom: 0;
+    }
+    .mycart-form a {
+        padding: 10px 15px
+    }
+    .mycart-heading {
+        text-align: center;
+    }
+    .mycart-heading h4 {
+        font-size: 20px;
+    }
+    .popup-box {
+        padding: 10px 10px;
+    }
+    .mission-area {
+        text-align: center;
+    }
+    .mission-inner {
+        flex-direction: column;
+    }
+    .mission-details {
+        padding: 0px 10px;
+    }
+    .mission-details {
+        margin: 10px 0;
+    }
+    .section-title {
+        font-size: 30px;
+        text-align: center;
+    }
+    .value-desc {
+        width: 100%;
+        text-align: center;
+        padding: 0 30px;
+        margin-bottom: 30px;
+    }
+    .section-content {
+        padding: 0;
+    }
+    .valuelist-desc {
+        margin-left: 12px;
+    }
+    /* .about-us-big-bg {
+        left: 21px;
+        top: 0;
+        width: 239px;
+        height: 160px;
+    }
+    .about-us-small-bg {
+        left: 128px;
+        top: 17px;
+        width: 176px;
+        height: 120px;
+        background-size: cover;
+        background-position: initial
+    }
+    .about-us-area {
+        min-height: 400px;
+        margin-top: 15px;
+        padding-top: 180px;
+        text-align: center;
+    }
+    .about-us-area h2 {
+        padding-bottom: 10px;
+    } */
+    .toggle-section a {
+        height: 50px;
+        width: 148px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .signup-area {
+        margin: 20px 0;
+    }
+    .signup-area-left {
+        margin-bottom: 20px;
+        padding: 25px 0;
+    }
+    .signup-area-right {
+        margin: 0;
+        padding: 0 20px;
+    }
+    .signup-banner-text {
+        padding: 20px 30px;
+    }
+    .contact-us {
+        padding: 15px 0;
+    }
+    .input-box {
+        margin: 10px 0;
+    }
+    .sigup-form {
+        margin: 0 5px;
+    }
+    .header-innner p {
+        display: inline-flex;
+        margin: 15px 10px;
+    }
+    .header-innner form {
+        margin: 0 10px;
+    }
+    .project-img p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .project-gallery h4 {
+        margin: 20px 0;
+    }
+    .list-bar {
+        display: none;
+    }
+    .header-menu {
+        display: none;
+    }
+    .header-menu.burger-menu {
+        display: block;
+    }
+    .header-contact {
+        display: none;
+    }
+    .menu-area {
+        background-color: var(--secondary);
+    }
+    .menu-btn {
+        display: flex;
+    }
+    .menu-left {
+        display: none;
+    }
+    .menu-left.hamburger {
+        display: block;
+        padding-top: 52px;
+    }
+    .menu-left ul {
+        display: inline-grid;
+        padding: 10px 0;
+    }
+    .menu-left ul li {
+        padding: 5px;
+    }
+    .col-lg-4.hide.column {
+        display: none;
+    }
+    .column {
+        min-height: 216px;
+        padding: 10px;
+    }
+    .dropdown-content {
+        top: 400px !important;
+        width: 100%;
+    }
+    .column a {
+        padding: 10px 1px !important;
+    }
+    .menu-right ul li {
+        padding: 15px 8px;
+    }
+    .menu-area li a {
+        font-size: 12px;
+    }
+    .column h5 {
+        font-size: 12px;
+        min-height: 86px;
+    }
+    .dropdown-content.product-content {
+        top: 369px !important;
+    }
+    .product-list {
+        float: none;
+    }
+    .menu-right span {
+        display: none;
+    }
+    .menu-right i.fas,
+    .menu-right i.far {
+        padding-right: 5px;
+        font-size: 22px;
+    }
+    .footer-banner {
+        width: 90%;
+        padding: 25px 10px;
+    }
+    .footer-banner-text h5 {
+        font-size: 16px;
+    }
+    .footer-banner-text h2 {
+        font-size: 16px;
+    }
+    .footer-details {
+        margin-top: 20px;
+    }
+    .subscribe-area {
+        margin: 15px 0;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .project-details-top {
+        text-align: center;
+        padding: 0px 50px;
+        margin: 25px 0 45px 0;
+    }
+    .product-details {
+        margin-top: 25px;
+    }
+    .add-card-btn {
+        padding: 11px 16px;
+    }
+    .sidebarHead {
+        margin-top: 15px;
+    }
+    .info-btn-box {
+        text-align: center;
+    }
+    .description-box.active-box {
+        padding: 0 15px;
+    }
+    .info-btn-box a {
+        width: 110px;
+        display: table-cell !important;
+        vertical-align: middle;
+        font-size: 11px;
+    }
+    .btn-active:after {
+        width: 24px;
+        height: 24px;
+        margin-left: -12px;
+        z-index: -1;
+    }
+    .show {
+        width: 338px !important;
+    }
+    .small-img {
+        width: 338px !important;
+    }
+}

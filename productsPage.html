@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="animate/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://www.dafontfree.net/embed/ZHMtaXptaXItbm9ybWFsJmRhdGEvMjQvZC8xMjIxNDYvRFNJem1pck5vcm1hbC50dGY" rel="stylesheet" type="text/css" />
+
+<style>
+    /* .view-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+} */
+.pd-item.list-group-item
+{
+    float: none;
+    width: 50%;   
+    margin-bottom: 30px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 50%;
+    border: 0;
+}
+</style>
+
+
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-3">
+                        <div class="logo">
+                            <img src="images/logo.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="search-bar">
+                            <input type="text" class="form-control search-input" placeholder="Search  Enter Here">
+                            <a href="" class="search-btn"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="header-contact">
+                            <p><i class="fas fa-phone-alt"></i> +88019300111</p>
+                            <p><i class="fas fa-envelope"></i> <span>acservicebd24@gmail.com</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="menu-left">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li class="mega-dropdown">
+                                    <a href="#">Products<i class="fas fa-angle-down"></i></a>
+                                    <div class="dropdown-content product-content">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="column">
+                                                    <ul class="product-list">
+                                                        <li><a href="categoriesAceBrands.html">All AC Categories</a></li>
+                                                        <li><a href="productsPage.html">Air Conditioner</a></li>
+                                                        <li><a href="AllCategoriesBrands.html">All AC Brands</a></li>
+                                                        <li><a href="productsPage.html">AC Hold</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mega-dropdown">
+                                    <a href="#">Work Pricing<i class="fas fa-angle-down"></i></a>
+                                    <div class="dropdown-content">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="column">
+                                                    <h5>
+                                                        <a href="acInstallationPricingPage.html">AC Installation & Dismantling</a>
+                                                    </h5>
+                                                    <ul>
+                                                        <li><a href="splitAcPricing.html">Split Air Conditioner</a></li>
+                                                        <li><a href="#">Window AC</a></li>
+                                                        <li><a href="#">VRF AC</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="column">
+                                                    <h5><a href="#">AC Servicing</a></h5>
+                                                    <ul>
+                                                        <li><a href="#">AC Servicing</a></li>
+                                                        <li><a href="#">AC Overhauling Servicing</a></li>
+                                                        <li><a href="#">VRF AC Servicing</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="column">
+                                                    <h5><a href="#">AC Repairing</a></h5>
+                                                    <ul>
+                                                        <li><a href="#">Split AC Repairing</a></li>
+                                                        <li><a href="#">Window AC Repairing</a></li>
+                                                        <li><a href="#">VRF AC Servicing</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="column">
+                                                    <h5><a href="#">AC Maintenance</a></h5>
+                                                    <ul>
+                                                        <li><a href="#">Split AC Maintenance</a></li>
+                                                        <li><a href="#">VRF AC Maintenance</a></li>
+                                                        <li><a href="#">Chiller AC Maintenance</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="acRentTerms.html">AC Rent</a></li>
+                                <li><a href="blogPage.html">Blog</a></li>
+                                <li><a href="aboutPage.html">About Us</a></li>
+                                <li><a href="contactUsPage.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 hide">
+                        <div class="menu-right">
+                            <ul>
+                                <li>
+                                    <a href="SignUpPage.html"><i class="fas fa-user"></i><span>Account</span></a></li>
+                                <li><a href=""><i class="far fa-heart"></i><span>Favourite</span></a></li>
+                                <li><a href="viewCartPage.html"><i class="fas fa-shopping-cart"></i><span>Carts</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER End -->
+
+    <!-- Products Page Main div Section End Here -->
+
+    <main>
+        <!-- Products page header section start here -->
+        <section>
+            <div class="container">
+                <div class="col-md-12 d-flex mt-4">
+                    <a class="HomeBack" href="index.html">Home</a>
+                    <p><i class="fas fa-angle-double-right"></i></p>
+                    <a class="productsBack" href="#">Products</a>
+                </div>
+            </div>
+        </section>
+        <!-- Products page header section End here -->
+        <!-- Products page main container section Start here -->
+        <section>
+            <div class="container">
+                <div class="col-md-12 row">
+
+                    <!-- Sidebar Section Start Here -->
+
+                    <div class="col-md-3">
+                        <div class="cardSidebar">
+                            <div>
+                                <h5 class="sidebarHead">Filter</h5>
+                            </div>
+
+                            <!-- Air Conditioner Section Start Here -->
+
+                            <div class="sidebarContent">
+                                <a class="sidebarContentHead">Air Conditioner <i class="fas fa-chevron-down appendDown"></i> <i class="fas fa-chevron-right appendRight arrowShow"></i></a>
+                                <div class="sidebarToggleDiv">
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="airConditioner-1">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="airConditioner-1">
+                                            Non-Inverter AC
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="airConditioner-2">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="airConditioner-2">
+                                            Inverter AC
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="airConditioner-3">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="airConditioner-3">
+                                            Window AC
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="airConditioner-4">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="airConditioner-4">
+                                            Portable AC
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="airConditioner-5">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="airConditioner-5">
+                                            Floor Stand AC
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="airConditioner-6">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="airConditioner-6">
+                                            Ceiling Type AC
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="airConditioner-7">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="airConditioner-7">
+                                            Cassette Type AC
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="airConditioner-8">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="airConditioner-8">
+                                            Duct Type AC
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Air Conditioner Section End Here -->
+
+                            <!-- AC Spares Parts section Start Here -->
+
+                            <div class="sidebarContent">
+                                <a class="sidebarContentHead">AC Spares Parts <i class="fas fa-chevron-down appendDown"></i> <i class="fas fa-chevron-right appendRight arrowShow"></i></a>
+                                <div class="sidebarToggleDiv">
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acSparesParts-1">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acSparesParts-1">
+                                            Compressor
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acSparesParts-2">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acSparesParts-2">
+                                            Copper Pipe
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acSparesParts-3">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acSparesParts-3">
+                                            Gas R-22
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acSparesParts-4">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acSparesParts-4">
+                                            Gas R-410A
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acSparesParts-5">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acSparesParts-5">
+                                            Capacitor
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AC Spares Parts section End Here -->
+
+                            <!-- AC Frame & Security section Start Here -->
+
+                            <div class="sidebarContent">
+                                <a class="sidebarContentHead">AC Frame & Security Grill <i class="fas fa-chevron-down appendDown"></i> <i class="fas fa-chevron-right appendRight arrowShow"></i></a>
+                                <div class="sidebarToggleDiv">
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acFrameSecurity-1">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acFrameSecurity-1">
+                                            Outdoor Angle Frame
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acFrameSecurity-2">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acFrameSecurity-2">
+                                            Indoor Angle Frame
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acFrameSecurity-3">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acFrameSecurity-3">
+                                            Window Angle Frame
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acFrameSecurity-4">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acFrameSecurity-4">
+                                            Security Grill
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AC Frame & Security section End Here -->
+
+                        </div>
+
+                        <!-- Price Section Sidebar Start Here -->
+
+                        <div class="cardSidebar">
+                            <div>
+                                <h5 class="sidebarHead">Pri</h5>
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Price Section Sidebar End Here -->
+
+                        <!-- Filters Section Sidebar Start Here -->
+
+                        <div class="cardSidebar">
+                            <div>
+                                <h5 class="sidebarHead">Filters</h5>
+                            </div>
+
+                            <!-- AC Brands Start Here -->
+
+                            <div class="sidebarContent">
+                                <a class="sidebarContentHead">AC Brands <i class="fas fa-chevron-down appendDown"></i> <i class="fas fa-chevron-right appendRight arrowShow"></i></a>
+                                <div class="sidebarToggleDiv">
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acBrands-1">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acBrands-1">
+                                            Outdoor Angle Frame
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acBrands-2">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acBrands-2">
+                                            Indoor Angle Frame
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acBrands-3">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acBrands-3">
+                                            Window Angle Frame
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acBrands-4">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acBrands-4">
+                                            Security Grill
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AC Brands End Here -->
+
+                            <!-- AC BTU Start Here -->
+
+                            <div class="sidebarContent">
+                                <a class="sidebarContentHead">AC BTU <i class="fas fa-chevron-down appendDown"></i> <i class="fas fa-chevron-right appendRight arrowShow"></i></a>
+                                <div class="sidebarToggleDiv">
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acBtu-1">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acBtu-1">
+                                            12000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acBtu-2">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acBtu-2">
+                                            18000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acBtu-3">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acBtu-3">
+                                            24000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acBtu-4">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acBtu-4">
+                                            30000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acBtu-5">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acBtu-5">
+                                            36000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="acBtu-6">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="acBtu-6">
+                                            42000 BTU
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AC BTU End Here -->
+
+                            <!-- Capacity Start Here -->
+
+                            <div class="sidebarContent">
+                                <a class="sidebarContentHead">Capacity <i class="fas fa-chevron-down appendDown"></i> <i class="fas fa-chevron-right appendRight arrowShow"></i></a>
+                                <div class="sidebarToggleDiv">
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="capacity-1">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="capacity-1">
+                                            12000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="capacity-2">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="capacity-2">
+                                            18000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="capacity-3">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="capacity-3">
+                                            24000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="capacity-4">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="capacity-4">
+                                            30000 BTU
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Capacity End Here -->
+
+
+                            <!-- Refrigerant Start Here -->
+
+                            <div class="sidebarContent">
+                                <a class="sidebarContentHead">Refrigerant <i class="fas fa-chevron-down appendDown"></i> <i class="fas fa-chevron-right appendRight arrowShow"></i></a>
+                                <div class="sidebarToggleDiv">
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="refrigerant-1">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="refrigerant-1">
+                                            12000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="refrigerant-2">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="refrigerant-2">
+                                            18000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="refrigerant-3">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="refrigerant-3">
+                                            24000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="refrigerant-4">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="refrigerant-4">
+                                            30000 BTU
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Refrigerant End Here -->
+
+                            <!-- Material Start Here -->
+
+                            <div class="sidebarContent">
+                                <a class="sidebarContentHead">Material <i class="fas fa-chevron-down appendDown"></i> <i class="fas fa-chevron-right appendRight arrowShow"></i></a>
+                                <div class="sidebarToggleDiv">
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="material-1">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="material-1">
+                                            12000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="material-2">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="material-2">
+                                            18000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="material-3">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="material-3">
+                                            24000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="material-4">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="material-4">
+                                            30000 BTU
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Material End Here -->
+
+
+                            <!-- Compressor Type Start Here -->
+
+                            <div class="sidebarContent">
+                                <a class="sidebarContentHead">Compressor Type <i class="fas fa-chevron-down appendDown"></i> <i class="fas fa-chevron-right appendRight arrowShow"></i></a>
+                                <div class="sidebarToggleDiv">
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="compressorType-1">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="compressorType-1">
+                                            12000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="compressorType-2">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="compressorType-2">
+                                            18000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="compressorType-3">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="compressorType-3">
+                                            24000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="compressorType-4">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="compressorType-4">
+                                            30000 BTU
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Compressor Type End Here -->
+
+
+                            <!-- Color Name Start Here -->
+
+                            <div class="sidebarContent">
+                                <a class="sidebarContentHead">Color Name <i class="fas fa-chevron-down appendDown"></i> <i class="fas fa-chevron-right appendRight arrowShow"></i></a>
+                                <div class="sidebarToggleDiv">
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="colorName-1">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="colorName-1">
+                                            12000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="colorName-2">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="colorName-2">
+                                            18000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="colorName-3">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="colorName-3">
+                                            24000 BTU
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input sidebarCheckBox" type="checkbox" value="" id="colorName-4">
+                                        <label class="form-check-label sidebarCheckBoxValue" for="colorName-4">
+                                            30000 BTU
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Color Name End Here -->
+
+                        </div>
+
+                        <!-- Filters Section Sidebar End Here -->
+
+                    </div>
+
+                    <!-- Sidebar Section End Here -->
+
+                    <!-- Main Products Section Start Here -->
+
+                    <div class="col-md-9">
+
+                        <!-- Main Slider Section Start Here -->
+
+                        <div class="row productSlider">
+                            <img src="./images/banner/acInstallationBanner.png" alt="">
+                            <div class="mt-5 d-flex productSliderBtnGroup">
+                                <p class="cetagoryText">AC Cetagories</p>
+                                <a class="cetagoryViewAllBtn" href="#">View All <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Main Slider Section End Here -->
+
+                        <!-- Addvertise Slider section Start Here -->
+                        <div class="autoplay advrSliderDiv">
+                            <div class="card advrCard">
+                                <div class="card-body">
+                                    <img class="w-75" src="./images/slider img/addSlider1.png" alt="">
+                                    <h6 class="advrCardTitle">Cassette Type</h6>
+                                </div>
+                            </div>
+                            <div class="card advrCard">
+                                <div class="card-body">
+                                    <img class="w-75" src="./images/slider img/addSlider2.png" alt="">
+                                    <h6 class="advrCardTitle">Ceiling Type</h6>
+                                </div>
+                            </div>
+                            <div class="card advrCard">
+                                <div class="card-body">
+                                    <img class="w-75" src="./images/slider img/addSlider3.png" alt="">
+                                    <h6 class="advrCardTitle">Floor Stand AC</h6>
+                                </div>
+                            </div>
+                            <div class="card advrCard">
+                                <div class="card-body">
+                                    <img class="w-75" src="./images/slider img/addSlider4.png" alt="">
+                                    <h6 class="advrCardTitle">Inverter AC</h6>
+                                </div>
+                            </div>
+                            <div class="card advrCard">
+                                <div class="card-body">
+                                    <img class="w-75" src="./images/slider img/addSlider5.png" alt="">
+                                    <h6 class="advrCardTitle">Non Inverter AC</h6>
+                                </div>
+                            </div>
+                            <div class="card advrCard">
+                                <div class="card-body">
+                                    <img class="w-75" src="./images/slider img/addSlider6.png" alt="">
+                                    <h6 class="advrCardTitle">Non Inverter AC</h6>
+                                </div>
+                            </div>
+                            <div class="card advrCard">
+                                <div class="card-body">
+                                    <img class="w-75" src="./images/slider img/addSlider1.png" alt="">
+                                    <h6 class="advrCardTitle">Cassette Type</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Addvertise Slider section End Here -->
+
+                        <!-- Products Section Header Start Here -->
+                        <div class="row gridHeader">
+                            <div class="d-flex gridListDiv">
+                                <div class="gridListIconDiv">
+                                    <a href="#" id="grid"><i class="fas fa-th gridListIcon"></i></a>
+                                    <a href="#" id="list"><i class="fas fa-bars gridListIcon"></i></a>
+                                </div>
+                                <div class="sortByDiv">
+                                    <p class="sortByName">Sort By:</p>
+                                    <div class="dropdown">
+                                        <button class=" dropdown-toggle sortByDropDown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Latest Products
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <button class="dropdown-item" type="button">Action</button>
+                                            <button class="dropdown-item" type="button">Another action</button>
+                                            <button class="dropdown-item" type="button">Something else here</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Products Section Header End Here -->
+                        <!--Product gallery start here-->.
+                        <div  id="products" class="row">
+                            <div class="pd-item col-lg-3">
+                                <div class="p2">
+                                    <div class="product-card p-2">
+                                        <a href="#">
+                                            <div class="product-media">
+                                                <img class="img-fluid" src="images/gree_ac.png" alt="">
+                                                <div class="discount">
+                                                    <span class="discount-text">15% Off</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="product-desc">
+                                            <div class="review d-flex justify-content-center mt-3">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product-name mt-3">
+                                                <a href="#">
+                                                    <p>Gree GS-18CT 1.5 Ton Split Type AC</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-price justify-content-center pb-3">
+                                            <span class="price">TK. 480,000</span> <del>TK. 480,000</del>
+                                        </div>
+                                        <div class="hover-cart  justify-content-center animate__animated animate__fadeInUp pb-3">
+                                            <a class="mini-btn" href=""><i class="fas fa-shopping-cart"></i></a>
+                                            <a class="mini-btn" href=""><i class="fas fa-eye"></i></a>
+                                            <a class="mini-btn" href=""><i class="fas fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pd-item col-lg-3">
+                                <div class="p2">
+                                    <div class="product-card p-2">
+                                        <a href="#">
+                                            <div class="product-media">
+                                                <img class="img-fluid" src="images/gree_ac.png" alt="">
+                                                <div class="discount">
+                                                    <span class="discount-text">15% Off</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="product-desc">
+                                            <div class="review d-flex justify-content-center mt-3">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product-name mt-3">
+                                                <a href="#">
+                                                    <p>Gree GS-18CT 1.5 Ton Split Type AC</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-price justify-content-center pb-3">
+                                            <span class="price">TK. 480,000</span> <del>TK. 480,000</del>
+                                        </div>
+                                        <div class="hover-cart  justify-content-center animate__animated animate__fadeInUp pb-3">
+                                            <a class="mini-btn" href=""><i class="fas fa-shopping-cart"></i></a>
+                                            <a class="mini-btn" href=""><i class="fas fa-eye"></i></a>
+                                            <a class="mini-btn" href=""><i class="fas fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pd-item col-lg-3">
+                                <div class="p2">
+                                    <div class="product-card p-2">
+                                        <a href="#">
+                                            <div class="product-media">
+                                                <img class="img-fluid" src="images/gree_ac.png" alt="">
+                                                <div class="discount">
+                                                    <span class="discount-text">15% Off</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="product-desc">
+                                            <div class="review d-flex justify-content-center mt-3">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product-name mt-3">
+                                                <a href="#">
+                                                    <p>Gree GS-18CT 1.5 Ton Split Type AC</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-price justify-content-center pb-3">
+                                            <span class="price">TK. 480,000</span> <del>TK. 480,000</del>
+                                        </div>
+                                        <div class="hover-cart  justify-content-center animate__animated animate__fadeInUp pb-3">
+                                            <a class="mini-btn" href=""><i class="fas fa-shopping-cart"></i></a>
+                                            <a class="mini-btn" href=""><i class="fas fa-eye"></i></a>
+                                            <a class="mini-btn" href=""><i class="fas fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pd-item col-lg-3">
+                                <div class="p2">
+                                    <div class="product-card p-2">
+                                        <a href="#">
+                                            <div class="product-media">
+                                                <img class="img-fluid" src="images/gree_ac.png" alt="">
+                                                <div class="discount">
+                                                    <span class="discount-text">15% Off</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="product-desc">
+                                            <div class="review d-flex justify-content-center mt-3">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product-name mt-3">
+                                                <a href="#">
+                                                    <p>Gree GS-18CT 1.5 Ton Split Type AC</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-price justify-content-center pb-3">
+                                            <span class="price">TK. 480,000</span> <del>TK. 480,000</del>
+                                        </div>
+                                        <div class="hover-cart  justify-content-center animate__animated animate__fadeInUp pb-3">
+                                            <a class="mini-btn" href=""><i class="fas fa-shopping-cart"></i></a>
+                                            <a class="mini-btn" href=""><i class="fas fa-eye"></i></a>
+                                            <a class="mini-btn" href=""><i class="fas fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Product gallery End here-->
+                    </div>
+
+
+
+                    <!-- Main Products Section End Here -->
+
+                </div>
+            </div>
+        </section>
+        <!-- Products page main container section End here -->
+    </main>
+    <!-- Products Page Main div Section End Here -->
+    <!-- Footer Section Start Here -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-banner">
+                            <img src="images/footer-banner.png" alt="">
+                            <img src="images/line 8.png" alt="">
+                            <div class="footer-banner-text">
+                                <h5>For Any Query Just Give a Call</h5>
+                                <h2><i class="fas fa-phone-volume"></i> <span>01911 493824</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="logo">
+                            <img src="images/banner-logo.png" alt="">
+                        </div>
+                        <div class="footer-contact">
+                            <div class="contact-box">
+                                <i class="fas fa-envelope"></i> <span>info@acservicebd.com</span>
+                            </div>
+                            <div class="contact-box">
+                                <i class="fas fa-phone-alt"></i> <span>01911 493 824 / 01681 155 591</span>
+                            </div>
+                            <div class="contact-box">
+                                <i class="fas fa-map-marker-alt"></i> <span>BTI Premier Shopping Mall, Cha # 90/A, 2nd Floor, Progoti Shoroni, Shahjadpur, North Badda, Dhaka-1212.</span>
+                            </div>
+
+                        </div>
+                        <div class="footer-social-icon">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-pinterest"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-details">
+                            <h4>Shopping With Us</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Why Shop With Us</a></li>
+                                <li><a href="#">Frequently Asked Questions</a></li>
+                                <li><a href="#">Online Purchase Procedure</a></li>
+                                <li><a href="#">Online Payment Methods</a></li>
+                                <li><a href="#">Online Payment Security</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-details">
+                            <h4>Customer Service</h4>
+                            <ul>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Warranty Policy</a></li>
+                                <li><a href="#">Return & Refund Policy</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">Terms & Conditons</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="subscribe-area">
+                            <h4>Get Connected</h4>
+                            <p>AC SERVICE BD always posts AC related news & company news regularly. So connect with us our recently news.</p>
+                            <input type="text" placeholder="Enter Your Email Address">
+                            <a href="#" class="sub-btn">Subscribe Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-bottom">
+                            &copy 2016-2021 AC SERVICE BD <span>|</span> All Rights Reserved <span>|</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End Here -->
+
+
+    <script src="js/jquery/jquery.min.js "></script>
+    <script src="js/isotope.pkgd.min.js "></script>
+    <script src="js/main.js "></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./fontawesome/js/fontawesome.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js " integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script src="js/jquery/counterup.js "></script>
+    <script src="js/jquery/waypoint.js "></script>
+
+    <!-- Sidebar Append jQuery Start Here -->
+
+    <script>
+        $('.sidebarContentHead').on('click', function() {
+            $(this).siblings().toggleClass("divShow");
+            $('.appendRight').removeClass("arrowShow");
+            $('.appendDown').addClass("arrowShow");
+        });
+    </script>
+
+    <!-- Sidebar Append jQuery End Here -->
+
+    <!-- Products Page Slider JS Start Here -->
+
+
+    <script>
+        $('.autoplay').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow: '<button type="button" class="advertiseArrowPre"><i class="fas fa-arrow-right"></i></button>',
+            nextArrow: '<button type="button" class="advertiseArrowNext"><i class="fas fa-arrow-left"></i></button>',
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+
+    <!-- Products Page Slider JS End Here -->
+    <script>
+        $(document).ready(function() {
+            $('#list').click(function(event){event.preventDefault();$('#products .pd-item').addClass('list-group-item');});
+            $('#grid').click(function(event){event.preventDefault();$('#products .pd-item').removeClass('list-group-item');$('#products .pd-item').addClass('grid-group-item');});
+        });
+    </script>
+
+    <script>
+         $(".widget-categories").collapse({
+		accordion:true,
+	  open: function() {
+		this.slideDown(550);
+	  },
+	  close: function() {
+		this.slideUp(550);
+	  }		
+	});
+    $(".accordion-active").collapse({
+		accordion:true,
+	  open: function() {
+		this.slideDown(550);
+	  },
+	  close: function() {
+		this.slideUp(550);
+	  }		
+	});	
+    </script>
+
+
+</body>
+
+</html>
