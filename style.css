@@ -407,7 +407,7 @@ footer {
 }
 
 .footer-banner img {
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .footer-banner-text {
@@ -429,6 +429,7 @@ footer {
 
 .footer-banner-text h5 {
     font-weight: 700;
+    font-size: 17px
 }
 
 .footer-social-icon a:hover {
@@ -3151,7 +3152,7 @@ div.mycart-form>form>a:nth-child(10) {
 
 /* About Us Page Start Here*/
 
-/* .about-us-big-bg {
+.about-us-big-bg {
     background-image: url(../images/image\ 25.png)
 }
 
@@ -3193,7 +3194,7 @@ div.mycart-form>form>a:nth-child(10) {
     border: 1px solid #E5E5E5;
     background-size: cover;
     z-index: 2;
-} */
+}
 
 /* === About Us Image start*/ 
 .about-us-small-bg {
@@ -3910,15 +3911,15 @@ div.info-btn-box>a:nth-child(4) {
     .valuelist-desc {
         margin-left: 12px;
     }
-    /* .about-us-big-bg {
+    .about-us-big-bg {
         left: 21px;
         top: 0;
         width: 239px;
         height: 160px;
     }
     .about-us-small-bg {
-        left: 128px;
-        top: 17px;
+        left: 372px;
+        top: -9px;
         width: 176px;
         height: 120px;
         background-size: cover;
@@ -3932,7 +3933,7 @@ div.info-btn-box>a:nth-child(4) {
     }
     .about-us-area h2 {
         padding-bottom: 10px;
-    } */
+    }
     .toggle-section a {
         height: 50px;
         width: 148px;
@@ -4051,11 +4052,8 @@ div.info-btn-box>a:nth-child(4) {
         width: 90%;
         padding: 25px 10px;
     }
-    .footer-banner-text h5 {
-        font-size: 16px;
-    }
     .footer-banner-text h2 {
-        font-size: 16px;
+        font-size: 15px;
     }
     .footer-details {
         margin-top: 20px;
@@ -4103,5 +4101,103 @@ div.info-btn-box>a:nth-child(4) {
     }
     .small-img {
         width: 338px !important;
+    }
+}
+
+/*Media Query tablet*/
+@media (min-width:561px) and (max-width:768px) {
+    /*Header Section*/
+    .header-contact {
+        display: flex;
+    }
+    
+    .header-contact p {
+        margin-top: 10px;
+        padding-right: 20px;
+    }
+
+    .header-menu {
+        display: none;
+    }
+    .header-menu.burger-menu {
+        display: block;
+    }
+    .header-contact {
+        display: none;
+    }
+    .menu-btn {
+        top: 187px;
+        left: 25px; 
+    }
+    .menu-area {
+        background-color: var(--secondary);
+    }
+    .menu-btn {
+        display: flex;
+    }
+    .menu-left {
+        display: none;
+    }
+    .menu-left.hamburger {
+        display: block;
+        padding-top: 52px;
+    }
+    .menu-left ul {
+        display: inline-grid;
+        padding: 10px 0;
+    }
+    .menu-left ul li {
+        padding: 10px;
+    }
+    .col-lg-4.hide.column {
+        display: none;
+    }
+    .column {
+        min-height: 216px;
+        padding: 10px;
+    }
+    .dropdown-content {
+        top: 440px !important;
+    }
+    .menu-right ul li {
+        padding: 15px 8px;
+    }
+    .menu-area li a {
+        font-size: 18px;
+    }
+    .dropdown-content.product-content {
+        top: 395px !important;
+    }
+    .product-list {
+        float: none;
+    }
+    .menu-right span {
+        display: none;
+    }
+    .menu-right i.fas,
+    .menu-right i.far {
+        font-size: 21px;
+    }
+    /*Footer Section Start*/
+    .footer-details {
+        margin-top: 5px;
+    }
+    /*About Us Page*/
+    .about-us-area h2 {
+        margin-top: 300px;
+    }
+    
+    .about-us-big-bg {
+        height: 300px;
+        width: 480px;
+        left: 41px;
+    }
+    
+    .about-us-small-bg {
+        left: 511px;
+        top: -8px;
+        width: 382px;
+        height: 256px;
+        background-position: top;
     }
 }
